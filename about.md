@@ -4,11 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm a vim enthusiast, screen admirer, git addict who enjoys coding everything from back end network requests, to mobile apps for my service organization, to finding unsanitized comment fields in said service organization's website. Nice to meet you!
 
 ### Contact me
 

@@ -69,6 +69,7 @@ gems:
   - jemoji          # Provides support for emoji within Jekyll posts and pages
   - jekyll-sitemap  # Adds a standards compliant sitemap for your GitHub Pages
   - jekyll-mentions # Provides support for @mentions within Jekyll posts and pages
+  - jekyll-archives # Automatically generate post archives by dates, tags, and categories.
 
 # Exclude these files from your production _site
 exclude:

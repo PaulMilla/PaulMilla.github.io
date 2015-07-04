@@ -72,9 +72,11 @@ Since this guide is aimed at beginners I'm assuming the use of a bash terminal. 
 
 #### Step 2: Add it to your .bashrc file
 The last step is to add the following line to your .bashrc file:
+
 ``` bash
 source ~/.git-completion.bash
 ```
+
 If you saved it under a different name and/or a different location than your home directory then you'll need to change the location after the source.
 
 If you don't have a .bashrc file I'd suggest taking a look at [Quick Starting Bash](/tools-of-the-trade/Quick-Starting-Bash/). You'll likely end up spending plenty of time in the terminal window, so configuring it to your needs can really pay off.

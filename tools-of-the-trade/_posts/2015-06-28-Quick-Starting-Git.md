@@ -61,3 +61,20 @@ $ git config --global credential.helper 'cache --timeout=3600'
 
 #### Windows
 I would honestly recommend downloading the [GitHub for Windows](https://windows.github.com/) application as it comes with a GUI interface, auto SSH key management, and a Git Shell that mimics a linux terminal along with tab completion for Git commands.
+
+
+## [Git Completion] (https://github.com/git/git/tree/master/contrib/completion)
+
+Tab completion is great. Even when you know what you want to type, it's so much nicer to only type the first couple of letters, press tab, and then have the computer read your mind. Well, the terminal already does tab completion for many of our other functions, why not get it to tab complete our git commands as well? Well, by using a handy git-completion script we can!
+
+#### Step 1: Download [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
+Since this guide is aimed at beginners I'm assuming the use of a bash terminal. In such case you can go to https://github.com/git/git/blob/master/contrib/completion/git-completion.bash and download the file via right-clicking "Raw" > "Save Link As". I would suggest saving this file in your home directory (/home/<user>/), and renaming it to ".gitcompletion.bash" (notice the leading period). It's not typically a file you'll care to see everytime you "ls" in your home directory, but since it's only use is to be included in your .bashrc file I like to keep them close.
+
+#### Step 2: Add it to your .bashrc file
+The last step is to add the following line to your .bashrc file:
+``` bash
+source ~/.git-completion.bash
+```
+If you saved it under a different name and/or a different location than your home directory then you'll need to change the location after the source.
+
+If you don't have a .bashrc file I'd suggest taking a look at [Quick Starting Bash](/tools-of-the-trade/Quick-Starting-Bash/). You'll likely end up spending plenty of time in the terminal window, so configuring it to your needs can really pay off.

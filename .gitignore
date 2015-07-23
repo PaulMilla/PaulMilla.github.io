@@ -1,4 +1,14 @@
+# Auto generated site folder
 _site/
+
+# Cache folder
 .sass-cache/
+
+# Swap files
 *.swp
+
+# Gemlock
 Gemfile.lock
+
+# Mac-only DS Store
+*.DS_Store

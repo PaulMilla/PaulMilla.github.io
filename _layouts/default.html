@@ -12,6 +12,17 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+    <script src="{{ site.baseurl }}/javascripts/jquery-2.1.4.min.js"></script>
+    <script src="{{ site.baseurl }}/javascripts/bootstrap.min.js"></script>
+    <script>
+      /* Javascript that enables 'sticky' nav bar */
+      $(function() {
+          $('#nav-wrapper').height($("nav").height());
+          $('nav').affix({
+              offset: { top: $('nav').offset().top }
+          });
+      });
+    </script>
   </head>
 
   <body>
@@ -95,15 +106,4 @@
 
     {% include analytics.html %}
   </body>
-  <script src="{{ site.baseurl }}/javascripts/jquery-2.1.4.min.js"></script>
-  <script src="{{ site.baseurl }}/javascripts/bootstrap.min.js"></script>
-  <script>
-    /* Javascript that enables 'sticky' nav bar */
-    $(function() {
-        $('#nav-wrapper').height($("nav").height());
-        $('nav').affix({
-            offset: { top: $('nav').offset().top }
-        });
-    });
-  </script>
 </html>

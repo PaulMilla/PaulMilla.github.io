@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -73,7 +73,7 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -152,13 +152,8 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 50px 0;
 
   @include mobile {
     text-align: center;
@@ -195,7 +190,6 @@ img {
 .site-name {
   margin: 0;
   color: $darkGray;
-  cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
@@ -213,20 +207,17 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
     display: block;
     font-size: 16px;
   }
 
   a {
-    margin-left: 20px;
+    margin-right: 20px;
     color: $darkGray;
     text-align: right;
     font-weight: 300;
@@ -237,6 +228,12 @@ nav {
       color: $blue;
     }
   }
+}
+
+nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 //

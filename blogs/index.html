@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<body>
+    <ul>
+    {% for category in site.categories %}
+        {% assign name = category | first %}
+        {% if name != 'blogs' %}
+        <li><a href="{{ name }}/">{{ name }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</body>

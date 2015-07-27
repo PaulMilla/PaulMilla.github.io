@@ -7,7 +7,13 @@ At ihiji, network management was our game. We would sell our small appliance to 
 
 ![Frontend SpeedTest created using HighCharts](/images/ihiji_speedtest.png)
 
-Check out the company blog article [here](http://www.ihiji.com/ihiji-adds-cloud-based-network-scanning-with-auto-discovery-and-an-internet-speed-test-to-the-award-winning-ihiji-invision-remote-network-management-solution/)
+Quick specs:
 
+* When: November 2013
+* Where: ihiji offices
+* How:
+  - Remote appliance using a python opensource speetest cli script set on an 8 hour cron job
+  - Backend webserver recieved data via PHP and upload it to MongoDB.
+  - Frontend built unpon existing company HTML/CSS templates and HighCharts API
 
-
+* Check out the company blog article [here](http://www.ihiji.com/ihiji-adds-cloud-based-network-scanning-with-auto-discovery-and-an-internet-speed-test-to-the-award-winning-ihiji-invision-remote-network-management-solution/)

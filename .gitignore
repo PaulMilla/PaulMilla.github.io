@@ -12,3 +12,6 @@ Gemfile.lock
 
 # Mac-only DS Store
 *.DS_Store
+
+# pyenv version
+.python-version

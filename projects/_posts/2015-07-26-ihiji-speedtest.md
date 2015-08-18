@@ -7,7 +7,7 @@ At ihiji, network management was our game. We would sell our small appliance to 
 
 ![Frontend SpeedTest created using HighCharts](/images/ihiji_speedtest.png)
 
-Quick specs:
+Quick Stats:
 
 * When: November 2013
 * Where: ihiji offices

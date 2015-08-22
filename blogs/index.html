@@ -1,12 +1,26 @@
 ---
 layout: default
+category: blogs
 ---
 
-<ul>
-{% for category in site.categories %}
-    {% assign name = category | first %}
-    {% if name != 'blogs' %}
-    <li><a href="{{ name }}/">{{ name }}</a></li>
-    {% endif %}
-{% endfor %}
-</ul>
+<div class="posts">
+  <article class="post">
+    <h1><a href="/blogs/cs373/">CS 373 - Software Engineering</a></h1>
+    <div class="entry">
+      <p>The one that started it all. A week by week summary of my experience in a class designed to teach modern Software Engineering for extra credit. Includes everything from learning Python and Django, to random rants about my summer school schedule.
+      </p>
+    </div>
+    <a href="/blogs/cs373/" class="read-more">Read More</a>
+  </article>
+</div>
+
+<div class="posts">
+  <article class="post">
+    <h1><a href="/blogs/tools-of-the-trade/">Tools of the Trade</a></h1>
+    <div class="entry">
+      <p>After getting involved in the <a href="https://www.piazza.com/">piazza</a> forum for my class I've come to realize that I enjoy sharing what I know and talking/writing about it. On an impulse, I decided to try my hand at creating some basic guides for tools that have served me well as an undergraduate Computer Science student at UT, with the slight possibility of actually sharing them with friends.
+      </p>
+    </div>
+    <a href="/blogs/cs373/" class="read-more">Read More</a>
+  </article>
+</div>

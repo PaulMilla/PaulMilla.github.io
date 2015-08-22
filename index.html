@@ -1,18 +1,47 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include meta.html %}
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <style>
+      /* Allow for navbar and footer to merge seamlessly */
+      .footer-basic-centered { margin-top: 0px; }
+      .navbar { border-color: #222; }
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      /* Give the header an awesome parallax background. TODO: Make it work! */
+      header {
+        background-image: url('/images/paper_background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      .masthead > .container {
+        text-align: center;
+        font-weight: 500;
+      }
+    </style>
+  </head>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  <body>
+    <header>
+      <div class="masthead clearfix">
+        <div class="container">
+          <div>
+            <img src="{{ site.avatar }}" class="img-circle" />
+          </div>
+          <h1>Hi, I'm Paul. Nice to meet you!</h1>
+        </div> <!-- /container -->
+      </div> <!-- /masthead clearfix -->
+    </header>
+
+    {% include navbar.html %}
+
+    {% include footer.html %}
+
+    {% include analytics.html %}
+  </body>
+</html>

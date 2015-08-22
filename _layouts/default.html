@@ -5,25 +5,16 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="/feed.xml" />
 
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <script src="/javascripts/jquery-2.1.4.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
-    <script>
-      /* Javascript that enables 'sticky' nav bar */
-      $(function() {
-          $('#nav-wrapper').height($("nav").height());
-          $('nav').affix({
-              offset: { top: $('nav').offset().top }
-          });
-      });
-    </script>
+    <script src="/javascripts/sticky-navbar.js"></script>
   </head>
 
   <body>
@@ -41,57 +32,7 @@
       </div>
     </header>
 
-    <!-- navigation bar -->
-    <div id="nav-wrapper">
-      <nav class="navbar navbar-inverse" role="navigation">
-        <!-- Removing for better overall alignment -->
-        <!-- <div class="container-fluid"> -->
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-collapsing-navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!-- Optional class="navbar-brand" -->
-            <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
-          </div> <!-- .navbar-header -->
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div id="my-collapsing-navbar" class="collapse navbar-collapse" style="padding-left:0;">
-            <ul class="nav navbar-nav">
-              <!-- "active" link example
-              <li class="active"><a href="#">Link 1<span class="sr-only">(current)</span></a></li>
-              -->
-              <li><a href="{{ site.baseurl }}/" style="padding-left:0;">Home</a></li>
-              <li><a href="/projects/">Projects</a></li>
-              <li><a href="/blogs/">Blogs</a></li>
-            </ul> <!-- .navbar-nav -->
-
-            <!-- Define elements from the right side of the navbar -->
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="https://drive.google.com/file/d/0B4UPxc-ft6igWUVYRjVaSU5hOTQ/view" target="_blank">Resume</a></li>
-              <li><a href="/about/">About</a></li>
-              <!-- dropdown example
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-              -->
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-    </div><!-- /#nav-wrapper-->
-
+    {% include navbar.html %}
 
     <div id="main" role="main" class="container">
       {{ content }}

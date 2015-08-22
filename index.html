@@ -21,7 +21,15 @@
 
       .masthead > .container {
         text-align: center;
-        font-weight: 500;
+      }
+      .masthead > .container > h1 {
+        margin-top: 20px;
+        font-size:  28px;
+      }
+      .masthead > .container > p {
+        margin-top:     -5px;
+        margin-bottom:  -5px;
+        font-size:      16px;
       }
     </style>
   </head>
@@ -33,7 +41,8 @@
           <div>
             <img src="{{ site.avatar }}" class="img-circle" />
           </div>
-          <h1>Hi, I'm Paul. Nice to meet you!</h1>
+          <h1 class="site-name">{{ site.name }}</h1>
+          <p class="site-description">{{ site.description }}</p>
         </div> <!-- /container -->
       </div> <!-- /masthead clearfix -->
     </header>

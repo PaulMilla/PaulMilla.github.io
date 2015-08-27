@@ -3,12 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
+I'm a vim enthusiast, screen admirer, git addict who enjoys coding everything from back end network requests, to mobile apps for my service organization, to finding unsanitized comment fields in said service organization's website.
 
-I'm a vim enthusiast, screen admirer, git addict who enjoys coding everything from back end network requests, to mobile apps for my service organization, to finding unsanitized comment fields in said service organization's website. Nice to meet you!
+Being a very detail oriented person I often like to think about the various ways to implement a solution, and it's not uncommon for me to keep a Stack Overflow tab open even for a known problem just to see how others have solved a problem. I also enjoy using the right tools for the job. Getting the opportunity to use a new application, framework, or library is an experience and, at first, is often spent researching how it works, best use cases, comparisons, etc.
 
-I'm also constantly looking for ways to improve my programs' efficiency often times keeping Stack Overflow open as I'm coding and refer to it whenever I think something could be done more efficiently. I might also be a little OCD about my code's readability.
-
-Check out the code for this site here: [https://github.com/PaulMilla/PaulMilla.github.io](https://github.com/PaulMilla/PaulMilla.github.io)
+Check out the source code for this site here: [https://github.com/PaulMilla/PaulMilla.github.io](https://github.com/PaulMilla/PaulMilla.github.io)
 
 ### Contact me
 

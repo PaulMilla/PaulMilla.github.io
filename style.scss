@@ -207,6 +207,10 @@ img {
   }
 }
 
+#nav-wrapper {
+    z-index: 1000;
+}
+
 nav {
   font-family: $helveticaNeue;
   font-size: 18px;

@@ -208,7 +208,8 @@ img {
 }
 
 #nav-wrapper {
-    z-index: 1000;
+    position: relative;
+    z-index: 999;
 }
 
 nav {
@@ -286,6 +287,14 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+/*****************/
+/* SPECIAL RULES */
+/*****************/
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
